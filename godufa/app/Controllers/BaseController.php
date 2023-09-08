@@ -79,6 +79,6 @@ abstract class BaseController extends Controller
         $this->cv = new CustomView();
 
         // Set headers.
-        $this->headerInfo['title'] = 'UFA ODIN';
+        $this->headerInfo['title'] = 'GOD UFA';
     }
 }

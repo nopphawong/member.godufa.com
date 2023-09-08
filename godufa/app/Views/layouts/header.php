@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title><?= esc($title) ?></title>
-    <link rel="shortcut icon" type="image/png" href="/favicon.ico?v=1">
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico?v=1.1">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" crossorigin="anonymous">
@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
     <!-- Our Custom CSS -->
-    <?= link_tag('assets/css/style.css?v=1.0.5') ?>
+    <?= link_tag('assets/css/style.css?v=1.1') ?>
 
     <!-- Loader CSS -->
     <?= link_tag('assets/css/loader.css?v=1.1') ?>

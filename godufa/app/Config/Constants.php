@@ -98,8 +98,8 @@ define('EVENT_PRIORITY_HIGH', 10);
  */
 defined('POST')             || define('POST', 'post');
 defined('GET')              || define('GET', 'get');
-defined('WEB_AGENT')        || define('WEB_AGENT', 'OFFUFA');
-defined('SECRET')           || define('SECRET', 'cf36445e3237983317ee7a9def6a98ef');
+defined('WEB_AGENT')        || define('WEB_AGENT', 'DEMOUFA');
+defined('SECRET')           || define('SECRET', '0546ddc00f6c4378c2fdef66b5e199f0');
 defined('API_URL')          || define('API_URL', 'https://demoapi.botbo21.com/apiv1/user/');
 // Games types.
 defined('TYPE_CASINO')      || define('TYPE_CASINO', 'CASINO');

@@ -466,7 +466,7 @@ textarea:-webkit-autofill:hover {
   color: #f5dab6;
 }
 .imganimationlogin {
-  max-width: 320px;
+  max-width: 250px;
   margin-top: 3.5rem;
   height: auto;
   -webkit-filter: drop-shadow(0 0 5px #777);

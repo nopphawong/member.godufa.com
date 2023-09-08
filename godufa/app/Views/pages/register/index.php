@@ -3,7 +3,7 @@
 <?= $this->section('content'); ?>
 <div style="padding: 5px;">
     <div class="logologin" style="padding-top: 10px;position:relative">
-        <img class="imganimationlogin" src="<?= base_url() ?>assets/images/ufa_odin_1.png">
+        <img class="imganimationlogin" src="<?= base_url() ?>assets/images/god_ufa.png">
         <div style="position: absolute;top: 16px;right: 16px;display: flex;column-gap: 8px;">
             <a href="<?= site_url('lang/th') ?>"><img src="assets/images/th.png" class="lang"></a>
             <a href="<?= site_url('lang/en') ?>"><img src="assets/images/en.png" class="lang"></a>
