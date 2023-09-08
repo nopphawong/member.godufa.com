@@ -12,7 +12,7 @@ body::after {
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   background: linear-gradient(325deg, #00000059 0, #00000036 100%),
-    url(../images/bg01.webp) center center;
+    url(../images/bg.jpg) center center;
   background-size: cover;
   top: 0;
   left: 0;

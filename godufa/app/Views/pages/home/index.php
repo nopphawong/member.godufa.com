@@ -93,14 +93,14 @@ $formatter = new CustomFormatter();
                 <img src="<?= base_url() ?>assets/images/promotions/01.jpg">
             </div>
             <div class="swiper-slide">
-                <img src="<?= base_url() ?>assets/images/promotions/0.jpg">
-            </div>
-            <!-- <div class="swiper-slide">
-                <img src="<?= base_url() ?>assets/images/promotions/03.png">
+                <img src="<?= base_url() ?>assets/images/promotions/02.jpg">
             </div>
             <div class="swiper-slide">
-                <img src="<?= base_url() ?>assets/images/promotions/04.png">
-            </div> -->
+                <img src="<?= base_url() ?>assets/images/promotions/03.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img src="<?= base_url() ?>assets/images/promotions/04.jpg">
+            </div>
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
