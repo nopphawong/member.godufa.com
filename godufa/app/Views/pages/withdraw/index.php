@@ -22,7 +22,7 @@ $formatter = new CustomFormatter()
                     <?= lang('Lang.withdraw.bank_name', [$formatter->bank_name_format(session()->data->bankid)]) ?>
                 </td>
                 <td style="text-align: center;">
-                    <img src="<?= base_url() ?>assets/fonts/kbank.svg" width="70px">
+                    <img src="<?= base_url() ?>assets/images/bank/<?= $formatter->bank_icon_format(session()->data->bankid) ?>.svg" width="70px">
                 </td>
             </tr>
         </table>
