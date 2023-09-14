@@ -58,7 +58,7 @@ class Register extends BaseController
              // NOTE: Notificaton.
              $notifyService = new NotificationService();
              $notifyService->sendMessageTelegram('m_register', GET, $body);
-             
+
             $service = new APIService();
             $response = $service->serverService('m_register', POST, $body);
             return $response;
