@@ -22,7 +22,8 @@ $formatter = new CustomFormatter();
                     </td> -->
                     <td style="width: 50%;text-align: left; font-size: 18px;padding-left: 15px;">
                         <i class="fas fa-user" style="font-size: 16px;color: #fad275;"></i> <?= session()->data->name ?><br>
-                        <img src="<?= base_url() ?>assets/fonts/kbank.svg" width="17px"> <span><?= $formatter->bank_ac_no_format(session()->data->bankno) ?></span>
+                        <i class="fal fa-user-circle" style="font-size: 16px;color: #fad275;"></i>
+                        <?= session()->data->userid ?>
                     </td>
                     <td style="width: 15%;text-align: right; ">
                         <table align="right">

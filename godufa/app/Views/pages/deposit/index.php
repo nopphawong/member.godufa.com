@@ -28,13 +28,13 @@ $formatter = new CustomFormatter();
                         จีรพล มุสิกบุญเลิศ <br>
                         <button onclick="myAlertTop()" class="copybtn mcolor">คัดลอก<span hidden>859-2-59209-0</span></button>
                     </div> -->
-                        <?php if (!isset($result->data)): ?>
+                        <?php if (!isset($result->data) || !isset($result->data->tbankid)): ?>
                             <div style="text-align: center; width: 100%; font-size: 13px; padding: 5px;">
                             <a href="https://lin.ee/zWj44TZ" target="_blank" rel="noreferrer" class="copybtn mcolor" style="padding: 12px 16px;text-decoration: unset;color: #fff;"><?= lang('Lang.forgot.contact_us') ?></a>
                         </div>
                         <?php else: ?>
                             <div style="text-align: center; width: 100%; font-size: 13px; padding: 5px;">
-                                <img src="<?= base_url() ?>assets/fonts/kbank_1.svg" width="70px" style="margin-bottom: 5px;"><br>
+                                <img src="<?= base_url() ?>assets/images/bank/<?= $formatter->bank_icon_format($result->data->tbankid) ?>.svg" width="70px" style="margin-bottom: 5px;"><br>
                                 <?= $formatter->bank_name_format($result->data->tbankid) ?>
                                 <br>
                                 <?= $formatter->bank_ac_no_format($result->data->tbankno) ?><br>

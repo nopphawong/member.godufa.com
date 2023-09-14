@@ -114,6 +114,7 @@ return [
         'verify' => 'Verify',
         'new_password' => 'New password',
         'otp_code' => 'OTP code',
+        'otp_note' => '*If you do not receive SMS OTP in 1 minute, please contact us.',
         'confirm' => 'Confirm',
         'otp_ref' => 'OTP Ref: ',
         'username_is_required' => 'Please specify phone numbers 10 digits',
