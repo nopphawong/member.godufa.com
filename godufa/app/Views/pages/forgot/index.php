@@ -115,7 +115,7 @@
                         <tr>
                             <td colspan="2" style="padding: 0 10px;padding-bottom: 15px;">
                                 <?= lang('Lang.forgot.otp_note') ?>
-                                <a href="https://lin.ee/zWj44TZ" target="_blank" rel="noreferrer" class="btnbackregister bkcolor" style="display: block;text-align: center;text-decoration: none;color: white;"><?= lang('Lang.forgot.contact_us') ?></a>
+                                <a href="https://lin.ee/B7l5eJk" target="_blank" rel="noreferrer" class="btnbackregister bkcolor" style="display: block;text-align: center;text-decoration: none;color: white;"><?= lang('Lang.forgot.contact_us') ?></a>
                             </td>
                         </tr>
                         <tr>

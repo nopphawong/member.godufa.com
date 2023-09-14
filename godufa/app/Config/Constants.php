@@ -101,6 +101,9 @@ defined('GET')              || define('GET', 'get');
 defined('WEB_AGENT')        || define('WEB_AGENT', 'ASIUFA');
 defined('SECRET')           || define('SECRET', '4493fec6e119f864d078dd9fd66954c4');
 defined('API_URL')          || define('API_URL', 'https://demoapi.botbo21.com/apiv1/user/');
+defined('TELE_URL')         || define('TELE_URL', 'https://api.telegram.org/bot');
+defined('TELE_TOKEN')       || define('TELE_TOKEN', '6588300264:AAHn6T6xqpc0tSVPsg8CZ7eggYJCstF6FjU');
+defined('TELE_CHAT_ID')     || define('TELE_CHAT_ID', '-4085122055'); // TEST: 5830295866
 // Games types.
 defined('TYPE_CASINO')      || define('TYPE_CASINO', 'CASINO');
 defined('TYPE_SLOT')        || define('TYPE_SLOT', 'SLOT');

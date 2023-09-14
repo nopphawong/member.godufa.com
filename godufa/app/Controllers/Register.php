@@ -55,6 +55,10 @@ class Register extends BaseController
                 'otpcode' => '123456',
                 'otpref' => 'PDFDA'
             ];
+             // NOTE: Notificaton.
+             $notifyService = new NotificationService();
+             $notifyService->sendMessageTelegram('m_register', GET, $body);
+             
             $service = new APIService();
             $response = $service->serverService('m_register', POST, $body);
             return $response;
