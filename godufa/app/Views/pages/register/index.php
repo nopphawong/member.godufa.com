@@ -280,6 +280,7 @@
                         }
                     },
                     error: function(err) {
+                        spinner('hide')
                         console.log(err);
                         swalError('<?= lang('Lang.dialog.confirm_btn') ?>', '<?= lang('Lang.error.something_went_wrong', ['Register  validate_phone']) ?>')
                     }
@@ -370,6 +371,7 @@
                                 $('#account_number').attr('readonly', true);
                             }
                         } catch (err) {
+                            spinner('hide')
                             console.log(err);
                             swalError(`<?= lang('Lang.dialog.confirm_btn') ?>', ${err}`)
                         }
@@ -429,6 +431,7 @@
                         }
                     },
                     error: function(err) {
+                        spinner('hide')
                         console.log(err);
                         swalError('<?= lang('Lang.dialog.confirm_btn') ?>', '<?= lang('Lang.error.something_went_wrong', ['Register register_submit']) ?>')
                     }
