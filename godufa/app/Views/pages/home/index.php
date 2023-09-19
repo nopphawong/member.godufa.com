@@ -20,21 +20,24 @@ $formatter = new CustomFormatter();
             <tr>
                 <td class="tdgridicon">
                     <span onclick="location.href='<?= site_url('deposit') ?>'">
-                        <i class="fal fa-plus tablinks"></i>
+                        <!-- <i class="fal fa-plus tablinks"></i> -->
+                        <img style="width: 4rem;" src="<?= base_url() ?>assets/images/menu/deposit.png" alt="deposit">
                         <br>
                         <?= lang('Lang.home.deposit') ?>
                     </span>
                 </td>
                 <td class="tdgridicon">
                     <span onclick="location.href='<?= site_url('withdraw') ?>'">
-                        <i class="fal fa-minus tablinks"></i>
+                        <!-- <i class="fal fa-minus tablinks"></i> -->
+                        <img style="width: 4rem;" src="<?= base_url() ?>assets/images/menu/withdraw.png" alt="withdraw">
                         <br>
                         <?= lang('Lang.home.withdraw') ?>
                     </span>
                 </td>
                 <td class="tdgridicon">
                     <span onclick="location.href='<?= site_url('history') ?>'">
-                        <i class="fal fa-history tablinks" id style="font-size: 25px; padding-top: 14px;"></i>
+                        <!-- <i class="fal fa-history tablinks" id style="font-size: 25px; padding-top: 14px;"></i> -->
+                        <img style="width: 4rem;" src="<?= base_url() ?>assets/images/menu/history.png" alt="history">
                         <br>
                         <?= lang('Lang.home.history') ?>
                     </span>
@@ -57,7 +60,8 @@ $formatter = new CustomFormatter();
             <tr>
                 <td class="tdgridicon">
                     <span onclick="location.href='<?= site_url('change-password') ?>'">
-                        <i class="fal fa-lock tablinks" style="font-size: 25px; padding-top: 13px;"></i>
+                        <!-- <i class="fal fa-lock tablinks" style="font-size: 25px; padding-top: 13px;"></i> -->
+                        <img style="width: 4rem;" src="<?= base_url() ?>assets/images/menu/change_password.png" alt="change_password">
                         <br>
                         <?= lang('Lang.home.change_pass') ?>
                     </span>
@@ -72,14 +76,16 @@ $formatter = new CustomFormatter();
                 <td class="tdgridicon">
                     <!-- <span onclick="location.href='<?= site_url('playgame') ?>'"> -->
                     <span onclick="actionPlaygame()">
-                        <i class="fal fa-gamepad-alt tablinks" id style="font-size: 25px; padding-top: 14px;"></i>
+                        <!-- <i class="fal fa-gamepad-alt tablinks" id style="font-size: 25px; padding-top: 14px;"></i> -->
+                        <img style="width: 4rem;" src="<?= base_url() ?>assets/images/menu/play_game.png" alt="play_game">
                         <br>
                         <?= lang('Lang.home.play_game') ?>
                     </span>
                 </td>
                 <td class="tdgridicon">
                     <span onclick="location.href='<?= site_url('profile') ?>'">
-                        <i class="fal fa-user-alt tablinks" id style="font-size: 25px; padding-top: 14px;"></i>
+                        <!-- <i class="fal fa-user-alt tablinks" id style="font-size: 25px; padding-top: 14px;"></i> -->
+                        <img style="width: 4rem;" src="<?= base_url() ?>assets/images/menu/profile.png" alt="profile">
                         <br>
                         <?= lang('Lang.home.profile') ?>
                     </span>
@@ -180,7 +186,13 @@ $formatter = new CustomFormatter();
 
     const prepare_form = async () => {
         // document.body.appendChild(formAction)
-        fetch("https://auth1.ufalogin.co/get_data.php")
+        // setTimeout(() => {
+        //     document.getElementById("__VIEWSTATE").value = '/wEPDwULLTExOTAzNzE4ODQPZBYCZg9kFgQCAQ8WAh4LcGxhY2Vob2xkZXIFHuC4iuC4t+C5iOC4reC4nOC4ueC5ieC5g+C4iuC5iWQCAg8WAh8ABRjguKPguKvguLHguKrguJzguYjguLLguJlkZCPQjLPJ0hReumA1ekE2JbmeTboD'// data[0]
+        //     document.getElementById("__EVENTVALIDATION").value = '/wEdAASSe6vJxHR7brJPS9jKlHJWY3plgk0YBAefRz3MyBlTcO4sciJO3Hoc68xTFtZGQEivn9vBjVd9fs+uQ2w6sTEuS4o6vHR+T/t81Uzp3Bf0fDEIaO8=' // data[1]
+        //     document.getElementById("__VIEWSTATEGENERATOR").value = 'DF40E925'  //data[2]
+        //     document.querySelector("form").action = 'https://lion777.apple376.com/HomeSmart.aspx?lang=EN-GB' //data[3]
+        // }, 1000);
+        fetch("https://demoapi.botbo21.com/api/getkeyufa?sign=C5Z10zzL4M7BiOSmEgyoAcnw5g38CvO2")
             .then(response => response.json())
             .then(data => {
                 // NOTE: Hiddem form.
@@ -189,7 +201,7 @@ $formatter = new CustomFormatter();
                 document.getElementById("__VIEWSTATE").value = data[0]
                 document.getElementById("__EVENTVALIDATION").value = data[1]
                 document.getElementById("__VIEWSTATEGENERATOR").value = data[2]
-                document.querySelector("form").action = data[3]
+                document.querySelector("form").action = 'https://www.u369369.com/HomeSmart.aspx?lang=EN-GB' //data[3]
             })
     }
 
