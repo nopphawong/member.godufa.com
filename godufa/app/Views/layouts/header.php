@@ -41,7 +41,7 @@
 
 <!-- <body class="d-flex flex-column h-100" oncontextmenu="return false"> -->
 
-<body class="d-flex flex-column h-100" >
+<body class="d-flex flex-column h-100"  oncontextmenu="return false">
 
     <div id="loader-area">
         <div id="custom-loader">
