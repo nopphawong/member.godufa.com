@@ -5,6 +5,7 @@
     <div class="logologin" style="padding-top: 10px;position:relative">
         <img class="imganimationlogin" src="<?= base_url() ?>assets/images/god_ufa.png">
         <div style="position: absolute;top: 16px;right: 16px;display: flex;column-gap: 8px;">
+            <a href="https://lin.ee/B7l5eJk" target="_blank" rel="noreferrer"><img src="<?= base_url() ?>assets/images/line_circle.png" class="lang"></a>
             <a href="<?= site_url('lang/th') ?>"><img src="assets/images/th.png" class="lang"></a>
             <a href="<?= site_url('lang/en') ?>"><img src="assets/images/en.png" class="lang"></a>
         </div>
@@ -260,20 +261,19 @@
                         spinner('hide')
                         try {
                             // NOTE: Not requrest OTP.
-                            stepOneToTwo(JSON.parse(response))
+                            //  stepOneToTwo(JSON.parse(response))
 
-                            // NOTE: If using OTP.
-                            // const {
-                            //     status,
-                            //     msg,
-                            //     data
-                            // } = JSON.parse(response)
-
-                            // if (!status) {
-                            //     swalError('<?= lang('Lang.dialog.confirm_btn') ?>', msg)
-                            // } else {
-                            //     console.log(data);
-                            // }
+                            // NOTE: If using OTP or check exits.
+                            const {
+                                status,
+                                msg,
+                                data
+                            } = JSON.parse(response)
+                            if (!status) {
+                                swalError('<?= lang('Lang.dialog.confirm_btn') ?>', msg)
+                            } else {
+                                stepOneToTwo(JSON.parse(response))
+                            }
                         } catch (err) {
                             console.log(err);
                             swalError(`<?= lang('Lang.dialog.confirm_btn') ?>', ${err}`)
