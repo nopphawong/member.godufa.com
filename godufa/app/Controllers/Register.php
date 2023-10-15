@@ -54,6 +54,15 @@ class Register extends BaseController
                 'otpcode' => '123456',
                 'otpref' => 'PDFDA'
             ];
+
+            // NOTE: Has ref.
+            $ref_param = $this->request->getVar('ref');
+            if($ref_param)
+                $body = array_merge(
+                    $body,
+                    ['ref' => $ref_param]
+                );
+                
              // NOTE: Notificaton.
              $notifyService = new NotificationService();
              $notifyService->sendMessageTelegram('m_register', GET, $body);
