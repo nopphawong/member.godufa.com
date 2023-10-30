@@ -30,7 +30,7 @@ $formatter = new CustomFormatter();
                     </div> -->
                         <?php if (!isset($result->data) || $result->data->tbankid == null): ?>
                             <div style="text-align: center; width: 100%; font-size: 13px; padding: 5px;">
-                                <a href="https://lin.ee/B7l5eJk" target="_blank" rel="noreferrer" class="copybtn mcolor" style="padding: 12px 16px;text-decoration: unset;color: #fff;"><?= lang('Lang.forgot.contact_us') ?></a>
+                                <a href="<?= $line_link ?>" target="_blank" rel="noreferrer" class="copybtn mcolor" style="padding: 12px 16px;text-decoration: unset;color: #fff;"><?= lang('Lang.forgot.contact_us') ?></a>
                             </div>
                         <?php else: ?>
                             <div style="text-align: center; width: 100%; font-size: 13px; padding: 5px;">

@@ -24,9 +24,9 @@
 
 <div style="padding: 5px;">
     <div class="logologin" style="padding-top: 10px;position:relative">
-        <img class="imganimationlogin" src="<?= base_url() ?>assets/images/god_ufa.png">
+        <img class="imganimationlogin" src="<?= $logo ?>">
         <div style="position: absolute;top: 16px;right: 16px;display: flex;column-gap: 8px;">
-            <a href="https://lin.ee/B7l5eJk" target="_blank" rel="noreferrer"><img src="<?= base_url() ?>assets/images/line_circle.png" class="lang"></a>
+            <a href="<?= $line_link ?>" target="_blank" rel="noreferrer"><img src="<?= base_url() ?>assets/images/line_circle.png" class="lang"></a>
             <a href="<?= site_url('lang/th') ?>"><img src="assets/images/th.png" class="lang"></a>
             <a href="<?= site_url('lang/en') ?>"><img src="assets/images/en.png" class="lang"></a>
         </div>
@@ -116,7 +116,7 @@
                         <tr>
                             <td colspan="2" style="padding: 0 10px;padding-bottom: 15px;">
                                 <?= lang('Lang.forgot.otp_note') ?>
-                                <a href="https://lin.ee/B7l5eJk" target="_blank" rel="noreferrer" class="btnbackregister bkcolor" style="display: block;text-align: center;text-decoration: none;color: white;"><?= lang('Lang.forgot.contact_us') ?></a>
+                                <a href="<?= $line_link ?>" target="_blank" rel="noreferrer" class="btnbackregister bkcolor" style="display: block;text-align: center;text-decoration: none;color: white;"><?= lang('Lang.forgot.contact_us') ?></a>
                             </td>
                         </tr>
                         <tr>

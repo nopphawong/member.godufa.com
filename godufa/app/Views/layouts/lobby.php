@@ -12,9 +12,9 @@ $formatter = new CustomFormatter();
         <!-- ส่วนหัว /ข้อมูลส่วนตัว----------------------------------------------- -->
         <div class="headmain">
             <div class="text-center">
-            <img class="imganimationlogin" style="margin:1em auto;" src="<?= base_url() ?>assets/images/god_ufa.png">
+                <img class="imganimationlogin" style="margin:1em auto;" src="<?= $logo ?>">
             </div>
-     
+
             <table width="100%">
                 <tr>
                     <!-- <td style="width: 15%;text-align: center; padding-left: 15px;  ">
@@ -29,7 +29,7 @@ $formatter = new CustomFormatter();
                         <table align="right">
                             <tr>
                                 <td style="padding-right: 2px;">
-                                    <a href="https://lin.ee/B7l5eJk" target="_blank" rel="noreferrer" class="tip_trigger">
+                                    <a href="<?= $line_link ?>" target="_blank" rel="noreferrer" class="tip_trigger">
                                         <div><img src="<?= base_url() ?>assets/images/line_contact.png?v=1" style="width: 36px;"></div>
                                     </a>
                                 </td>
@@ -114,7 +114,7 @@ $formatter = new CustomFormatter();
 <div class="heightmobile"></div>
 
 
-<a href="https://lin.ee/B7l5eJk" target="_blank" rel="noreferrer" class="tip_trigger">
+<a href="<?= $line_link ?>" target="_blank" rel="noreferrer" class="tip_trigger">
     <div class="linebtn"><img src="<?= base_url() ?>assets/fonts/chat2.svg" style="width: 70px;"></div>
 </a>
 

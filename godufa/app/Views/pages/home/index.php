@@ -94,7 +94,7 @@ $formatter = new CustomFormatter();
             <tr>
                 <td colspan="3">
                     <div style="margin-top: 1.4rem">
-                        <a href="https://lin.ee/B7l5eJk" target="_blank" rel="noreferrer">
+                        <a href="<?= $line_link ?>" target="_blank" rel="noreferrer">
                             <img src="<?= base_url() ?>assets/images/conntact_us.png" alt="contact us" style="width:250px">
                         </a>
                     </div>
@@ -104,18 +104,17 @@ $formatter = new CustomFormatter();
     </div>
     <div class="swiper-container-2">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="<?= base_url() ?>assets/images/promotions/01.jpg">
-            </div>
-            <div class="swiper-slide">
-                <img src="<?= base_url() ?>assets/images/promotions/02.jpg">
-            </div>
-            <div class="swiper-slide">
-                <img src="<?= base_url() ?>assets/images/promotions/03.jpg">
-            </div>
-            <div class="swiper-slide">
-                <img src="<?= base_url() ?>assets/images/promotions/04.jpg">
-            </div>
+            <?php if (empty($banners)) : ?>
+                <div class="swiper-slide">
+                    <img src="<?= site_url("assets/images/default/banner_default.png") ?>">
+                </div>
+            <?php else : ?>
+                <?php foreach ($banners as $banner) : ?>
+                    <div class="swiper-slide">
+                        <img src="<?= $banner->image ?>" alt="<?= $banner->name ?>" title="<?= $banner->detail ?>">
+                    </div>
+                <?php endforeach ?>
+            <?php endif ?>
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
